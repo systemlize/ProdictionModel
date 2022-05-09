@@ -10,5 +10,6 @@ def iris_data_prediction(sepal_length, sepal_width, petal_length, petal_width):
 
     knn.fit(inp, out)
 
-    prediction = knn.predict([[sepal_length, sepal_width, petal_length, petal_width]]       )
+    prediction = knn.predict([[sepal_length, sepal_width, petal_length, petal_width]])
     return iris['target_names'][prediction][0]
+
